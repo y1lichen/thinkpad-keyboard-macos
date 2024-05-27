@@ -18,6 +18,43 @@
                 },
                 "rules": [
                     {
+                        "description": "cmd+shift+f4 to toggle wifi for thinkpad keyboard",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "identifiers": [
+                                            {
+                                                "product_id": 24647,
+                                                "vendor_id": 6127
+                                            }
+                                        ],
+                                        "type": "device_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "f8",
+                                    "modifiers": {
+                                        "mandatory": [],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "f11",
+                                        "modifiers": [
+                                            "command",
+                                            "shift"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "cmd button3 for thinkpad keyboard",
                         "manipulators": [
                             {
@@ -198,7 +235,9 @@
                                 ],
                                 "from": {
                                     "modifiers": {
-                                        "mandatory": ["any"]
+                                        "mandatory": [
+                                            "any"
+                                        ]
                                     },
                                     "pointing_button": "button3"
                                 },

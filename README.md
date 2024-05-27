@@ -17,8 +17,9 @@ This repo is the [Karabiner](https://karabiner-elements.pqrs.org) setup for maco
   increase brightness
 - f7
   currently didn't map anything
-- f7
-  currently didn't map anything
+- f8
+  toggle wifi
+  require using the automator script follow [this](https://gist.github.com/viktorklang/9140756) gist.
 - f9
   fn
 - f10
