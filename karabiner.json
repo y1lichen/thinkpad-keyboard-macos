@@ -68,6 +68,49 @@
                         ]
                     },
                     {
+                        "description": "prev tab for sk-8845",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "left_arrow",
+                                    "modifiers": {
+                                        "mandatory": ["left_option"],
+                                        "optional": ["any"]
+                                    }
+                                },
+                                "to": {
+                                    "key_code": "tab",
+                                    "modifiers": [
+                                        "left_control",
+                                        "left_shift"
+                                    ]
+                                },
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "next tab for sk-8845",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "right_arrow",
+                                    "modifiers": {
+                                        "mandatory": ["left_option"],
+                                        "optional": ["any"]
+                                    }
+                                },
+                                "to": {
+                                    "key_code": "tab",
+                                    "modifiers": [
+                                        "left_control"
+                                    ]
+                                },
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "toggle wifi for thinkpad keyboard",
                         "manipulators": [
                             {
